@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/whit">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="@string/date"
+        android:background="@drawable/graphbutton"
+        android:onClick="ondateclick"/>
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:text="@string/go"
+        android:id="@+id/go"
+        android:onClick="onviewdateclick"/>
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        android:id="@+id/selectedate"/>
+    
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drawgraph"></LinearLayout>
+    
+
+</LinearLayout>
+<!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/layout/heartgraph.xml -->

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="droid_brsp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/droid_brsp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

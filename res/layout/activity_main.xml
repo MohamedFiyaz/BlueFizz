@@ -1,0 +1,745 @@
+<!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/whit"
+    tools:context="com.htc.bluefizz.MainActivity" >
+    
+   <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:paddingTop="50dp"
+	        android:orientation="vertical">
+         	  <LinearLayout 
+		       		android:paddingTop="0dp"
+		          	android:layout_height="wrap_content"
+		         	android:layout_width="fill_parent"
+		          	android:layout_marginTop="100dp"
+		          	android:orientation="horizontal">
+				    
+		        	 <LinearLayout
+			          	android:layout_height="fill_parent"
+			          	android:layout_width="fill_parent"
+			          	android:layout_weight="1"
+			          	android:gravity="center">
+			  		  		<Button 
+					    		android:layout_height="110dp"
+				        		android:layout_width="110dp"
+						        android:text="@string/rspo"
+						        android:background="@drawable/mybutton"
+						        android:gravity="center_vertical|center_horizontal"
+						        android:textColor="#fff"
+						        android:onClick="scheck"/> 
+			  		</LinearLayout>
+		   		 	<LinearLayout
+				        android:layout_height="fill_parent"
+				        android:layout_width="fill_parent"
+				        android:layout_weight="1"
+				        android:gravity="center">
+			  				<TextView
+				              android:layout_width="fill_parent"
+				              android:layout_height="wrap_content"
+				              android:id="@+id/sporate" 
+				              android:text="@string/spo100"
+				              android:textColor="#000000"
+				              android:textSize="50dip"
+				              android:textStyle="bold"
+				              android:padding="5dip"
+				              android:gravity="center"/>
+			  		</LinearLayout>
+			  		<LinearLayout
+		          		android:layout_height="fill_parent"
+		          		android:layout_width="fill_parent"
+		          		android:layout_weight="1"
+		          		android:gravity="center">
+				  			<ImageView
+					            android:id="@+id/spopic"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					      		android:src="@drawable/spoj"/>  
+					</LinearLayout>
+					
+			</LinearLayout>
+		    <LinearLayout 
+		       		android:layout_height="wrap_content"
+		         	android:layout_width="fill_parent"
+		          	android:layout_marginTop="50dp"
+		          	android:orientation="horizontal">
+			   		<LinearLayout
+			          	android:layout_height="fill_parent"
+			          	android:layout_width="fill_parent"
+			          	android:layout_weight="1"
+			          	android:gravity="center">
+			  		  		<Button 
+					    		android:layout_height="110dp"
+				        		android:layout_width="110dp"
+						        android:text="@string/rheart"
+						        android:gravity="center_vertical|center_horizontal"
+						        android:textColor="#fff"
+						        android:background="@drawable/mybutton"
+						        android:onClick="hcheck"/> 
+			  		</LinearLayout>
+			   		<LinearLayout
+				        android:layout_height="fill_parent"
+				        android:layout_width="fill_parent"
+				        android:layout_weight="1"
+				        android:gravity="center">
+			  				<TextView
+				              android:layout_width="fill_parent"
+				              android:layout_height="wrap_content"
+				              android:id="@+id/heartrate" 
+				              android:text="@string/heart72"
+				              android:textColor="#000000"
+				              android:textSize="50dip"
+				              android:textStyle="bold"
+				              android:padding="5dip"
+				              android:gravity="center"/>
+			  		</LinearLayout>
+			  		<LinearLayout
+		          		android:layout_height="fill_parent"
+		          		android:layout_width="fill_parent"
+		          		android:layout_weight="1"
+		          		android:gravity="center">
+				  			<ImageView
+					            android:id="@+id/heartpic"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					      		android:src="@drawable/hearet"/>  
+					</LinearLayout>
+					
+		    </LinearLayout>
+		    <LinearLayout 
+		       		android:paddingTop="0dp"
+		          	android:layout_height="wrap_content"
+		         	android:layout_width="fill_parent"
+		          	android:layout_marginTop="50dp"
+		          	android:orientation="horizontal">
+				    
+		        <LinearLayout
+			          	android:layout_height="fill_parent"
+			          	android:layout_width="fill_parent"
+			          	android:layout_weight="1"
+			          	android:gravity="center">
+						<Button
+							android:layout_width="110dp"
+							android:layout_height="110dp"
+							android:background="@drawable/mybutton"
+							android:gravity="center_vertical|center_horizontal"
+							android:text="@string/rtemp"
+							android:textColor="#fff"
+							android:onClick="tcheck" />
+			  		</LinearLayout>
+		   		 	<LinearLayout
+				        android:layout_height="fill_parent"
+				        android:layout_width="fill_parent"
+				        android:layout_weight="1"
+				        android:gravity="center">
+			  				<TextView
+				              android:layout_width="fill_parent"
+				              android:layout_height="wrap_content"
+				              android:id="@+id/temprate" 
+				              android:text="@string/temp30"
+				              android:textColor="#000000"
+				              android:textSize="50dip"
+				              android:textStyle="bold"
+				              android:padding="5dip"
+				              android:gravity="center"/>
+			  		</LinearLayout>
+			  		<LinearLayout
+		          		android:layout_height="fill_parent"
+		          		android:layout_width="fill_parent"
+		          		android:layout_weight="1"
+		          		android:gravity="center">
+				  			<ImageView
+					            android:id="@+id/tempic"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					      		android:src="@drawable/bodytemp"/>  
+					</LinearLayout>
+			</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+	    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="0.05" />
+
+	        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.2">
+
+				<ImageButton
+                    android:id="@+id/soo2_button"
+                    android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+                    android:background="@drawable/spo2"
+                    android:onClick="scheck"/>
+				<LinearLayout
+                    android:id="@+id/spp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+				    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.80"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2" />
+
+				        <ImageView
+                            android:id="@+id/spopic"
+                            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.4"
+				            android:src="@drawable/spo2icon" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.90"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:id="@+id/textview_spo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.35"
+                            android:text="100"
+                            android:textColor="#ffffffff"
+                             />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/spopercentage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.35"
+                        android:paddingTop="70dp"
+                        android:text="%"
+                        android:textColor="#ffffffff"
+                     />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:layout_weight="0.80">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.25" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.25"
+                            android:src="@drawable/spo2text" />
+					 </LinearLayout>
+				</LinearLayout>
+
+			</RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="0.10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.6"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/rel_temp"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85">
+
+                    <ImageButton
+                        android:id="@+id/temp_button"
+                        android:layout_width="match_parent"
+						android:layout_height="match_parent"
+                        android:background="@drawable/temp" 
+                        android:onClick="tcheck"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.02" />
+
+                            <ImageView
+                                 android:id="@+id/tempic"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/tempicon" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.03" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:id="@+id/textview_temp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="30"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:src="@drawable/dcicon"/>
+				         </LinearLayout>
+			        </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.09" />
+
+                <LinearLayout
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.81" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.20">
+
+                        <ImageButton
+                            android:id="@+id/steps_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/steps"
+                            android:onClick="stepcheck" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.23"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.15" />
+
+                                <TextView
+                                    android:id="@+id/textview_steps"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="1200"
+                                    android:textColor="#ffffff"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.03" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.2"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.05" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:src="@drawable/step" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.6"
+                                    android:src="@drawable/stepsicon"/>
+
+                            </LinearLayout>
+						</LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_cal"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.98">
+
+                    <ImageButton
+                        android:id="@+id/calory_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/kcal"
+                        android:onClick="ccheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.4"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/calicon" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.03" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1" />
+
+                            <TextView
+                                android:id="@+id/textview_calory"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="1500"
+                                android:textColor="#ffffff"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:src="@drawable/kcalicon"/>
+					    </LinearLayout>
+					  </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/verr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.272" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.385"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.21" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.535">
+
+                <ImageButton
+                    android:id="@+id/heart_button"
+                    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/bpm" 
+					android:onClick="hcheck"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+					    android:layout_weight="0.05" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.23"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+					        android:layout_weight="0.35" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            android:src="@drawable/bpmtext" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+						    android:layout_weight="0.30" />
+
+                        <TextView
+                            android:id="@+id/textview_bpm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:text="72"
+                            android:textColor="#ffffff" />
+					  </LinearLayout>
+					<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <ImageView
+                            android:id="@+id/heartpic"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.81"
+                            android:background="@drawable/heartrateicon"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

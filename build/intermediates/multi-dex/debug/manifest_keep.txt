@@ -1,0 +1,18 @@
+-keep class null {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.htc.bluefizz.MainActivity { <init>(); }
+-keep class com.htc.bluefizz.Scanning { <init>(); }
+-keep class com.htc.bluefizz.Settings { <init>(); }
+-keep class com.htc.bluefizz.Heartgraph { <init>(); }
+-keep class com.htc.bluefizz.Spograph { <init>(); }
+-keep class com.htc.bluefizz.Accgraph { <init>(); }
+-keep class com.htc.bluefizz.Tempgraph { <init>(); }
+-keep class com.htc.bluefizz.Fileview { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

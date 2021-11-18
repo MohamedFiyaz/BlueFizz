@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.htc.bluefizz.MainActivity" >
+    <item 
+        android:id="@+id/batindicator"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/hello_world"/>
+      <item
+        android:id="@+id/indication"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:title="@string/hello_world"/> 
+	<item
+        android:id="@+id/reset"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="@string/reset"/> 
+    <item
+        android:id="@+id/scans"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom"
+        android:title="@string/scan_for_device"/> 
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="104"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    
+     <item
+        android:id="@+id/push_settings"
+        android:orderInCategory="105"
+        android:showAsAction="never"
+        android:title="@string/push_settings"/>
+     
+     <item
+        android:id="@+id/synch_settings"
+        android:orderInCategory="106"
+        android:showAsAction="never"
+        android:title="@string/syn_settings"/>
+      <item
+        android:id="@+id/heartgraph"
+        android:orderInCategory="107"
+        android:showAsAction="never"
+        android:title="@string/hgraph"/>
+       <item
+        android:id="@+id/spograph"
+        android:orderInCategory="108"
+        android:showAsAction="never"
+        android:title="@string/sgraph"/>
+       <item
+        android:id="@+id/tempgraph"
+        android:orderInCategory="109"
+        android:showAsAction="never"
+        android:title="@string/tgraph"/>
+        <item
+        android:id="@+id/checkfile"
+        android:orderInCategory="110"
+        android:showAsAction="never"
+        android:title="@string/veiw_file"/>
+        <item
+        android:id="@+id/filedelet"
+        android:orderInCategory="111"
+        android:showAsAction="never"
+        android:title="@string/delete_file"/>
+
+</menu>
+<!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/menu/main.xml -->

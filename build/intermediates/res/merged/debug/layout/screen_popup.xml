@@ -1,0 +1,135 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/popup_element"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/plainbl"
+        android:orientation="vertical"
+        android:padding="10sp" >
+
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/pname"/>
+        <EditText
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:hint="@string/pname"/>
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/page"/>
+        <EditText
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:inputType="number"
+            android:hint="@string/page"/>
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/psex"/>
+        <RadioGroup
+            android:id="@+id/sex"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/male"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"/>
+
+            <RadioButton
+                android:id="@+id/female"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/pdiesepro"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:popupBackground="@android:drawable/btn_dropdown"
+            android:dropDownSelector="@android:drawable/btn_dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/pdocname"/>
+        <EditText
+            android:id="@+id/docname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:hint="@string/pdocname"/>"
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "@string/pdocno"/>
+        <EditText
+            android:id="@+id/docnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:inputType="number"
+            android:hint="@string/pdocno"/>"
+        <TextView
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:textColor="#ffffff"
+            android:text= "Emergency Contact Number"/>
+        <EditText
+            android:id="@+id/emergencycontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:inputType="number"
+            android:hint="Emergency Contact Number"/>"
+
+
+        <Button
+            android:id="@+id/btn_close_popup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/signin"
+            android:onClick="sbutton"/>
+
+    </LinearLayout>
+</ScrollView><!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/layout/screen_popup.xml -->

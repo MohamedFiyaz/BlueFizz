@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.htc.bluefizz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="21" />
+    <!-- Bluetooth and LE Settings Start -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <!-- Bluetooth and LE Settings End -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vitalsens"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.htc.bluefizz.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Scanning"
+            android:label="@string/scan_for_device" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.SCANNING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Settings"
+            android:label="@string/action_settings" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Heartgraph"
+            android:label="@string/heartrate" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.HEARTGRAPH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Spograph"
+            android:label="@string/spo" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.SPOGRAPH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Accgraph"
+            android:label="@string/acc" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.ACCGRAPH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Tempgraph"
+            android:label="@string/temp" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.TEMPGRAPH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.htc.bluefizz.Fileview"
+            android:label="@string/veiw_file" >
+            <intent-filter>
+                <action android:name="com.htc.bluefizz.FILEVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

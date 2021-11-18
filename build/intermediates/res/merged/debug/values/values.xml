@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Batterycheck">Battery Level of Device</string>
+    <string name="acc">Accelerometer</string>
+    <string name="acc00">0</string>
+    <string name="action_settings">Settings</string>
+    <string name="agraph">Acc Graph</string>
+    <string name="app_name">VitalSens</string>
+    <string name="bcheck">Battery Check</string>
+    <string name="bclose">Close</string>
+    <string name="change">Change</string>
+    <string name="connect">Connect</string>
+    <string name="datasyn">Sync Interval</string>
+    <string name="date">Select Date</string>
+    <string name="dcon">Device Connection Status</string>
+    <string name="delete_file">Delete File</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="female">Female</string>
+    <string name="go">Go</string>
+    <string name="heading">Recommanded Settings For Your Age </string>
+    <string name="heart72">72</string>
+    <string name="heartrate">Heart Rate</string>
+    <string name="hello_world"/>
+    <string name="hgraph">Heart Graph</string>
+    <string name="male">Male</string>
+    <string name="meas_freq_in_min">Measurement Interval in Minutes</string>
+    <string name="msg_quit_detail">Resetting your application will erase all your basic user profile and device information</string>
+    <string name="msg_quit_title">Reset</string>
+    <string name="no">No</string>
+    <string name="no_of_meas_per_day">Number of measurements per day</string>
+    <string name="ok">OK</string>
+    <string name="page">Age</string>
+    <string name="patage">Patient Age</string>
+    <string name="patname">Patient Name</string>
+    <string name="pdiesepro">Disease Profile</string>
+    <string name="pdocname">Doctor Name</string>
+    <string name="pdocno">Doctor Phone Number</string>
+    <string name="pname">Name</string>
+    <string name="psex">Sex</string>
+    <string name="push_settings">Push</string>
+    <string name="reset">Reset</string>
+    <string name="rheart">HR</string>
+    <string name="rspo">SPO2</string>
+    <string name="rtemp">TEMP</string>
+    <string name="scan_for_device">Scan</string>
+    <string name="set">Set</string>
+    <string name="sgraph">Spo2 Graph</string>
+    <string name="signin">Sign In</string>
+    <string name="spo">Spo2</string>
+    <string name="spo100">100</string>
+    <string name="syn_freq_in_min">Sync Interval in Minutes</string>
+    <string name="syn_settings">Sync Settings</string>
+    <string name="temp">Temperature</string>
+    <string name="temp30">30</string>
+    <string name="tempcheck">Temperature Check</string>
+    <string name="tgraph">Temperature Graph</string>
+    <string name="veiw_file">View File Data</string>
+    <string name="yes">Yes</string>
+    <!-- From: file:/D:/Androidstudioproject/Bluefizz_testcase/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Androidstudioproject\Bluefizz_testcase\libs\droid_brsp.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7c3afcf2fdc83369907d9294f5bad4b004370b2e">
+        <dex dex="D:\Androidstudioproject\Bluefizz_testcase\build\intermediates\pre-dexed\debug\droid_brsp-645ca6a2a3e829f7493f94e8d47f2c60122681ed.jar" />
+    </item>
+    <item
+        jar="D:\Androidstudioproject\Bluefizz_testcase\libs\Parse-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5811138d4e6cb9d45030e133ef1a61b935154c3a">
+        <dex dex="D:\Androidstudioproject\Bluefizz_testcase\build\intermediates\pre-dexed\debug\Parse-1.9.0-35fbe068e0c114e93e625f9ccae996f1ea8d522f.jar" />
+    </item>
+    <item
+        jar="D:\Androidstudioproject\Bluefizz_testcase\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="D:\Androidstudioproject\Bluefizz_testcase\build\intermediates\pre-dexed\debug\achartengine-1.1.0-9773e64d3ff1cd0a59ce0ff7981225d573d10b2b.jar" />
+    </item>
+    <item
+        jar="D:\Androidstudioproject\Bluefizz_testcase\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3e4e879d0b3dc11f2feb3f55e77e3b5bd82c4a28">
+        <dex dex="D:\Androidstudioproject\Bluefizz_testcase\build\intermediates\pre-dexed\debug\android-support-v4-aaaa3056821cf1a3850cdfd739093c4734aabcec.jar" />
+    </item>
+
+</items>
